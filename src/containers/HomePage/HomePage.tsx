@@ -1,16 +1,16 @@
-import Button from "../../components/Button/Button";
-import Icon from "../../components/Icon/Icon";
-import Header from "../../layouts/Header/Header";
-import "./HomePage.scss";
+import Button from '../../components/Button/Button';
+import Icon from '../../components/Icon/Icon';
+import Header from '../../layouts/Header/Header';
+import './HomePage.scss';
 
 const logos = [
-  { name: "zapier", src: "zapier" },
-  { name: "spotify", src: "spotify" },
-  { name: "zoom", src: "zoom" },
-  { name: "amazon", src: "amazon" },
-  { name: "adobe", src: "adobe" },
-  { name: "notion", src: "notion" },
-  { name: "netflix", src: "netflix" },
+  { name: 'zapier', src: 'zapier' },
+  { name: 'spotify', src: 'spotify' },
+  { name: 'zoom', src: 'zoom' },
+  { name: 'amazon', src: 'amazon' },
+  { name: 'adobe', src: 'adobe' },
+  { name: 'notion', src: 'notion' },
+  { name: 'netflix', src: 'netflix' },
 ];
 
 const LogoSection = () => (

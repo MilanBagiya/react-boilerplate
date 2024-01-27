@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 import {
   AppIcon,
   AppIconNameSubset,
   mioIconSet,
-} from "../../assets/svg/app-icon.model";
+} from '../../assets/svg/app-icon.model';
 
 interface IconProps {
   name?: AppIconNameSubset<typeof mioIconSet>;

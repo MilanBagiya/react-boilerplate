@@ -22,7 +22,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:icons": "npm run svg-to-ts",
-    "svg-to-ts": "svg-to-ts-constants"
+    "svg-to-ts": "svg-to-ts-constants",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "format-check": "prettier --check \"src/**/*.{ts,tsx}\""
   },
   "svg-to-ts": {
     "conversionType": "constants",
@@ -59,10 +61,11 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.70.0",
-    "tailwindcss": "^3.4.1",
-    "postcss": "^8.4.33",
     "autoprefixer": "^10.4.17",
-    "svg-to-ts": "^11.0.1"
+    "postcss": "^8.4.33",
+    "prettier": "^3.2.4",
+    "sass": "^1.70.0",
+    "svg-to-ts": "^11.0.1",
+    "tailwindcss": "^3.4.1"
   }
 }

@@ -1,6 +1,6 @@
-import Button from "../../components/Button/Button";
-import Icon from "../../components/Icon/Icon";
-import "./Header.scss";
+import Button from '../../components/Button/Button';
+import Icon from '../../components/Icon/Icon';
+import './Header.scss';
 
 export default function Header() {
   return (
