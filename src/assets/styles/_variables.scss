@@ -1,0 +1,57 @@
+// _variables.scss
+
+:root {
+  // Typography
+  --font-family: 'Be Vietnam Pro', sans-serif;
+  --font-weight-regular: normal;
+  --font-weight-medium: 500; // Medium
+  --font-weight-bold: bold;
+  --font-weight-semi-bold: 600;
+
+  --font-size-base: 1rem;
+  --line-height-base: 150%;
+
+  // Border
+  --border-radius: 8px;
+
+  // Heading Sizes
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.8rem;
+  --h3-font-size: 1.6rem;
+  --h4-font-size: 1.4rem;
+  --h5-font-size: 1.2rem;
+  --h6-font-size: 1rem;
+
+  --sm-font-size: 0.875rem;
+  --lg-font-size: 1.875rem;
+  --md-font-size: 1.5rem;
+
+  // Absolute Colors
+  --white: #fff;
+  --black: #000;
+
+  // Light Colors
+  --light-1: #e4e4e7;
+  --light-2: #f1f1f3;
+  --light-3: #f7f7f8;
+  --light-4: #fcfcfd;
+
+  // Orange Shades
+  --primary-color: #ff9500;
+  --primary-light-1: #ffbf66;
+  --primary-light-2: #ffd499;
+  --primary-light-3: #ffeacc;
+  --primary-light-4: #fff4e5;
+  --primary-light-5: #fff9f0;
+  --primary-light-6: #fffdfa;
+
+  // Dark Colors
+  --dark-1: #191919;
+  --dark-2: #262626;
+  --dark-3: #333333;
+  --dark-4: #4c4c4d;
+  --dark-5: #59595a;
+  --dark-6: #656567;
+  --dark-7: #98989a;
+  --dark-8: #b3b3b3;
+}

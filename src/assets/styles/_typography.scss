@@ -1,0 +1,41 @@
+.app-links {
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: var(--sm-font-size);
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: var(--light-3);
+  }
+}
+
+.app-text-lg {
+  color: var(--dark-1);
+  font-family: var(--font-family);
+  font-size: var(--lg-font-size);
+  line-height: var(--line-height-base);
+  font-style: var(--font-weight-regular);
+  font-weight: var(--font-weight-semi-bold);
+  text-align: center;
+}
+.app-text-md {
+  color: var(--dark-2);
+  font-family: var(--font-family);
+  font-size: var(--md-font-size);
+  line-height: var(--line-height-base);
+  font-style: var(--font-weight-regular);
+  font-weight: var(--font-weight-semi-bold);
+  text-align: center;
+}
+
+.app-text-sm {
+  color: var(--dark-2);
+  font-family: var(--font-family);
+  font-size: var(--sm-font-size);
+  line-height: var(--line-height-base);
+  font-style: var(--font-weight-regular);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+}

@@ -1,15 +1,17 @@
 {
-  "compilerOptions": {
+  "compileOnSave": false,
+  "compilerOptions": { 
+  "rootDir": ".",
+  "sourceMap": true,
+  "declaration": false,
     "target": "es5",
     "lib": [
+      "es2019",
       "dom",
       "dom.iterable",
       "esnext"
     ],
     "baseUrl": "./src",
-    "paths": {
-      "*": ["*", "src/*"]
-    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,6 +20,7 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
+    "skipDefaultLibCheck": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -26,5 +29,16 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "paths": {
+    "@app/shared-components": [
+      "src/components/index.ts"
+    ],
+    "@app/shared-containers": [
+      "src/containers/index.ts"
+    ],
+    "@app/shared-layouts": [
+      "src/layouts/index.ts"
+    ],
+  },
 }
