@@ -6,8 +6,8 @@ import Banner from 'layouts/Banner/Banner';
 const LoginButtons: React.FC = () => {
   return (
     <div className="flex justify-between items-center gap-2">
-      <Button label="Sign Up" />
-      <Button label="Login" variant="primary" />
+      <Button label="Sign Up" bgColor='--light-4'/>
+      <Button label="Login" />
     </div>
   );
 };

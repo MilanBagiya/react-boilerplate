@@ -5,10 +5,10 @@ import './Button.scss';
 interface IButton {
   onClick?: () => void;
   label?: string;
-  variant?: 'primary' | 'secondary';
+  bgColor?: string;
 }
 
-const Button = ({ onClick, label, variant = 'secondary' }: IButton) => {
+const Button = ({ onClick, label, bgColor }: IButton) => {
   const buttonStyles: CSSProperties = {
     display: 'flex',
     justifyContent: 'center',
@@ -21,8 +21,8 @@ const Button = ({ onClick, label, variant = 'secondary' }: IButton) => {
     fontWeight: 400,
     lineHeight: '150%',
     transition: 'all 0.2s ease-in-out',
-    backgroundColor: variant === 'primary' ? 'var(--primary-color)' : '',
-    color: variant === 'primary' ? '#fff' : '#000',
+    backgroundColor: bgColor ? `var(${bgColor})` : 'var(--primary-color)',
+    color: bgColor ? '#000' : '#fff',
     border: 'none',
     cursor: 'pointer',
   };
@@ -37,7 +37,7 @@ const Button = ({ onClick, label, variant = 'secondary' }: IButton) => {
 Button.propTypes = {
   onClick: PropTypes.func,
   label: PropTypes.string,
-  variant: PropTypes.oneOf(['primary', 'secondary']),
+  bgColor: PropTypes.string,
 };
 
 export default Button;

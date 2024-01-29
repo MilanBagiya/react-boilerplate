@@ -1,6 +1,8 @@
 import Button from 'components/Button/Button';
 import Icon from 'components/Icon/Icon';
 import Video from 'components/Video/Video';
+import Benefits from 'containers/Benefits/Benefits';
+import Courses from 'containers/Courses/Courses';
 import Header from 'layouts/Header/Header';
 
 const logos = [
@@ -28,10 +30,10 @@ const HeroSection = () => (
   <div className="flex justify-center w-full my-12">
     <Card>
       <SubContainer />
-      <h2 className="app-text-md pt-6 pb-2">
+      <h2 className="app-text-md pt-6 pb-2 text-center">
         with Online Design and Development Courses.
       </h2>
-      <h6 className="app-text-sm py-2">
+      <h6 className="app-text-sm py-2 text-center">
         Learn from Industry Experts and Enhance Your Skills.
       </h6>
       <ButtonSection />
@@ -82,7 +84,7 @@ const Divider = () => (
 
 const ButtonSection = () => (
   <div className="flex justify-center mt-10 gap-2">
-    <Button label="Explore Courses" variant="primary" />
+    <Button label="Explore Courses" bgColor='--light-4'/>
     <Button label="View Pricing" />
   </div>
 );
@@ -94,9 +96,9 @@ export default function HomePage() {
       <div className="md:container md:mx-auto">
         <HeroSection />
         <LogoSection />
-        <Video
-          videoSource={`https://pixabay.com/videos/volcano-mountain-jungle-aerial-191354/`}
-        />
+        <Video />
+        <Benefits />
+        <Courses />
       </div>
     </>
   );
